@@ -5,6 +5,10 @@ import {
 
 const router = createBrowserRouter([
     {
+        path: "*",
+        element: <div>Not Found 404</div>,
+    },
+    {
         path: "/",
         element: <div>Home</div>,
     },
