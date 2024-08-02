@@ -7,6 +7,7 @@ export const WrapperMenu = styled.div`
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 999;
     width: 100%;
     height: auto;
     display: flex;
@@ -193,9 +194,10 @@ export const Nav = styled.nav<{$open: boolean}>`
                     .content-link{
                         color: white;
                         font-size: 1.3rem;
-                        font-weight: 500;
+                        font-weight: 300;
                         line-height: 1.6rem;
                         letter-spacing: 0;
+                        text-transform: uppercase;
 
                         .icon{
                             display: none;
