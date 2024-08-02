@@ -1,9 +1,12 @@
 export const theme = {
     color: {
+        primary: "#173A33",
         gray: "#DDDDDD"
     },
 
     radius: {
-        md: "1.5rem"
+        sm: ".8rem",
+        md: "1.5rem",
+        full: "999rem"
     }
 }
