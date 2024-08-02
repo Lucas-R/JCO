@@ -11,11 +11,11 @@ const router = createBrowserRouter([
     },
     {
         path: "/",
-        element: <Menu />,
+        element: <Menu type="unique"/>,
     },
     {
         path: "/gestao-exclusiva",
-        element: <div>Gestão Exclusiva</div>,
+        element: <Menu type="primary"/>,
     },
     {
         path: "/homepricing",

@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { List, X, MagnifyingGlass, CaretDown } from '@phosphor-icons/react'
+import { MenuProps } from './@types';
 import * as S from "./style"
 
-export function Menu() {
+export function Menu({ type }: MenuProps) {
     const [open, setOpen] = useState(false);
 
     function handleMenu(){
@@ -11,14 +12,14 @@ export function Menu() {
     }
 
     return (
-        <S.WrapperMenu>
-            <S.Brand />
+        <S.WrapperMenu className={type}>
+            <Link to="/"><S.Brand className={type}/></Link>
 
-            <S.Actions>
+            <S.Actions className={type}>
                 <button className='menu' onClick={handleMenu}><List className='icon' /></button>
             </S.Actions>
 
-            <S.Nav $open={open}>
+            <S.Nav className={type} $open={open}>
                 <div className="nav-header">
                     <Link className='nav-brand' to="/"></Link>
                     <div className='nav-actions'>
