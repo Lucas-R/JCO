@@ -2,7 +2,8 @@ import {
     createBrowserRouter,
     RouterProvider,
   } from "react-router-dom"
-import { Menu } from "../components/menu"
+import { Menu } from "@components/menu"
+import { Home } from "@pages/Home"
 
 const router = createBrowserRouter([
     {
@@ -11,7 +12,7 @@ const router = createBrowserRouter([
     },
     {
         path: "/",
-        element: <Menu type="unique"/>,
+        element: <Home />,
     },
     {
         path: "/gestao-exclusiva",

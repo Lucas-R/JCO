@@ -1,10 +1,11 @@
-import * as S from "./style";
+import { HeaderProps } from "./@types"
+import * as S from "./style"
 
-export function Header() {
+export function Header({src, opacity = 0, children} : HeaderProps) {
     return (
-        <S.WrapperHeader>
+        <S.WrapperHeader $src={src} $opacity={opacity}>
             <S.ContainerHeader>
-                <h1> Prazer de morar nos Jardins </h1>
+                { children }
             </S.ContainerHeader>
         </S.WrapperHeader>
     )
