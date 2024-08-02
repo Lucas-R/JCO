@@ -2,6 +2,7 @@ import {
     createBrowserRouter,
     RouterProvider,
   } from "react-router-dom"
+import { Menu } from "../components/menu"
 
 const router = createBrowserRouter([
     {
@@ -10,11 +11,11 @@ const router = createBrowserRouter([
     },
     {
         path: "/",
-        element: <div>Home</div>,
+        element: <Menu type="unique"/>,
     },
     {
         path: "/gestao-exclusiva",
-        element: <div>Gestão Exclusiva</div>,
+        element: <Menu type="primary"/>,
     },
     {
         path: "/homepricing",
