@@ -43,6 +43,10 @@ const router = createBrowserRouter([
         element: <div>Busca</div>,
     },
     {
+        path: "/imovel/:id",
+        element: <div>imovel</div>,
+    },
+    {
         path: "/blog",
         element: <div>Blog</div>,
     },
